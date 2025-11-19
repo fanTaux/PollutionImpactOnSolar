@@ -12,7 +12,7 @@ from retry_requests import retry
 # Konfigurasi Database PostgreSQL
 DB_NAME = "pv_analysis_db"
 DB_USER = "postgres"
-DB_PASS = "Sidoarjo11_" 
+DB_PASS = "YOUR PASSWORD HERE" 
 DB_HOST = "localhost"
 DB_PORT = "5432" # <<< SUDAH DIUBAH KE 5432
 TABLE_NAME = "hourly_pv_data" 
@@ -29,7 +29,7 @@ PANEL_AZIMUTH = 0    # Azimuth 0 (Menghadap Utara)
 TEMP_COEFF = -0.0045
 
 # Konfigurasi OpenAQ
-OPENAQ_API_KEY = "c6375c650d0bb95242e8c2dd633602b6ff6f52bd9ebe3e226f448a1e8b078358"
+OPENAQ_API_KEY = "YOUR API KEY HERE"
 OPENAQ_SENSORS = [
     {'id': 13397854, 'param': 'pm1'},
     {'id': 13397855, 'param': 'pm25'},
@@ -313,4 +313,5 @@ def run_pv_etl_pipeline():
     print("\n🎉 PIPELINE ETL SELESAI!")
 
 if __name__ == "__main__":
+
     run_pv_etl_pipeline()
