@@ -29,7 +29,7 @@ PANEL_AZIMUTH = 0    # Azimuth 0 (Menghadap Utara)
 TEMP_COEFF = -0.0045
 
 # Konfigurasi OpenAQ
-OPENAQ_API_KEY = "YOUR API KEY HERE"
+OPENAQ_API_KEY = "YOUR API KEY"
 OPENAQ_SENSORS = [
     {'id': 13397854, 'param': 'pm1'},
     {'id': 13397855, 'param': 'pm25'},
@@ -313,5 +313,4 @@ def run_pv_etl_pipeline():
     print("\n🎉 PIPELINE ETL SELESAI!")
 
 if __name__ == "__main__":
-
     run_pv_etl_pipeline()
